@@ -1,0 +1,45 @@
+#tooltip {
+    position: fixed;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 100%;
+    white-space:pre-wrap;
+}
+
+.text {
+    overflow: hidden;
+    font-size: 12px;
+    fill: white;
+    color: rgb(227, 249, 255);
+}
+
+rect:hover {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: 
+    "graph legend"
+    "info info";
+    align-content: center;
+    justify-content: center;
+}
+#info {
+    grid-area: info;
+    margin: auto;
+    text-align: center;
+}
+#graph {
+    grid-area: graph;
+    margin: auto;
+}
+
+#legend {
+    grid-area: legend;
+    margin: auto;
+}
